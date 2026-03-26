@@ -1,4 +1,4 @@
-import { Slider } from "antd"
+import Slider from "antd/es/slider"
 import type { SliderSingleProps } from "antd"
 
 export const ProgressBar = ({value,title }:{value: number,title: string}) => {

@@ -1,4 +1,4 @@
-import { Carousel } from "antd";
+import Carousel from "antd/es/carousel";
 
 export const TextCarousel = () => {
     return (

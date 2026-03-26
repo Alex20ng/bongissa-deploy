@@ -77,7 +77,15 @@ const menuItem = {
   }
 };
 
-export const Home = ({toHome, toAbout, toProjet, toQuestion, toContact}: {toHome: any, toAbout: any, toProjet: any, toQuestion: any, toContact: any}) => {
+type HomeProps = {
+    toHome: () => void;
+    toAbout: () => void;
+    toProjet: () => void;
+    toQuestion: () => void;
+    toContact: () => void;
+}
+
+export const Home = ({toHome, toAbout, toProjet, toQuestion, toContact}: HomeProps) => {
     const [onClick, setOnClick] = useState(false);
 
     const { scrollY } = useScroll();

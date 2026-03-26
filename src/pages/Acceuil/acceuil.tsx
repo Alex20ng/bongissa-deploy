@@ -8,14 +8,14 @@ import {useRef} from "react";
 export default function Acceuil() {
    const year = new Date().getFullYear();
 
-   const homeRef = useRef(null);
-   const aboutRef = useRef(null);
-   const projetRef = useRef(null);
-   const contactRef = useRef(null);
-   const questionRef = useRef(null);
+   const homeRef = useRef<HTMLElement | null>(null);
+   const aboutRef = useRef<HTMLElement | null>(null);
+   const projetRef = useRef<HTMLElement | null>(null);
+   const contactRef = useRef<HTMLElement | null>(null);
+   const questionRef = useRef<HTMLElement | null>(null);
 
-   const scrollTo = (ref: React.RefObject<any>) => {
-    ref.current.scrollIntoView({ behavior:"smooth"});
+   const scrollTo = (ref: React.RefObject<HTMLElement | null>) => {
+    ref.current?.scrollIntoView({ behavior:"smooth"});
    }
 
   return (

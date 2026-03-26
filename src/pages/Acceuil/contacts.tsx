@@ -6,7 +6,14 @@ import instagram from "../../assets/instagram.png";
 import tiktok from "../../assets/tiktok.png";
 import whatsapp from "../../assets/whatsapp.png";
 
-export const Contacts = ({toAbout, toProjet, toQuestion}: {toAbout:any, toProjet:any, toQuestion:any}) => {
+
+type ContactsProps = {
+    toAbout: () => void;
+    toProjet: () => void;
+    toQuestion: () => void;
+}
+
+export const Contacts = ({toAbout, toProjet, toQuestion}: ContactsProps) => {
 
     return (
         <div className="p-10">
