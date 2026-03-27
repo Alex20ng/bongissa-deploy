@@ -116,7 +116,7 @@ export const About = () => {
           </p>
 
           <ProgressBar value={80} title="Solution durable et Innovation"/>
-          <ProgressBar value={60} title="Sensibiisation et education enrvironnementale"/>
+          <ProgressBar value={60} title="Sensibilisation et education enrvironnementale"/>
           <ProgressBar value={90} title="Gestion et valorisation des dechets"/>
         </motion.div>
 

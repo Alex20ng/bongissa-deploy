@@ -171,7 +171,7 @@ export const Home = ({toHome, toAbout, toProjet, toQuestion, toContact}: HomePro
                         <img src={logo} alt="Logo" className="object-contain"/>
                     </div>
                     <div className="flex justify-between items-center text-white text-2xs font-semibold w-[50%] pl-4 p-1  bg-primary mx-auto rounded-4xl">
-                        <button className="cursor-pointer" onClick={toHome}>Acceuil</button>
+                        <button className="cursor-pointer" onClick={toHome}>Accueil</button>
                         <button className="cursor-pointer" onClick={toAbout}>A propos</button>
                         <button className="cursor-pointer" onClick={toProjet}>Projets</button>
                         <button className="cursor-pointer" onClick={toQuestion}>FAQs</button>
